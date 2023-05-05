@@ -33,11 +33,11 @@ main .hl-container {
 main .hl-container .container {
   text-align: center;
   display: block;
-  width: 200px;
+  width: 400px;
   margin: 0 auto;
 }
 main .hl-container .container input {
-  width: 200px;
+  width: 400px;
   margin-top: 3px;
   padding: 5px 10px;
   border-radius: 20px;

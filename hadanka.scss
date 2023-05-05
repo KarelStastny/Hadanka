@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+//============Variable
+$color-primal: orange;
+$color-second: red;
+
+//============Mixin
 @mixin header {
     color: black;
-    background-color: rgb(232, 18, 240);
+    background-color: $color-primal;
     height: 100px;
     margin: 0 auto;
     display: flex;
@@ -27,27 +32,50 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.container{
-    border-radius: 30px;
-    height: 300px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.247);
-}
 
-.container2{
-
-    div{
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-color: aquamarine;
-        text-align: center;
-        line-height: 30px;
+    .hl-container{
+        border-radius: 30px;
+        width: 500px;
+        background-color: $color-second;
+        padding: 20px;
+        
+    
+        .container{
+            text-align: center;
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            
+                div{
+                
+                    background-color: $color-primal;
+                    width: 200px;
+                    margin-top: 3px;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                }
+        }
+        
+        .container2{
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 30px;
+            line-height: 30px;
+           
+            
+                div{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: $color-primal;
+                    text-align: center;
+                    line-height: 30px;
+                    margin: 2px;
+                    border-radius: 10px;
+                }
+        
+        }
     }
 
 }
-

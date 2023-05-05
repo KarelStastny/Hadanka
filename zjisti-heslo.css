@@ -6,16 +6,12 @@
 
 body {
   height: 100vh;
+  background-color: rgb(74, 200, 250);
+  font-family: "Courier New", Courier, monospace;
 }
 
-header {
-  color: black;
-  background-color: orange;
-  height: 100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  line-height: 100px;
+h1 {
+  margin-bottom: 20px;
 }
 
 main {
@@ -26,8 +22,9 @@ main {
 }
 main .hl-container {
   border-radius: 30px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.582);
   width: 500px;
-  background-color: red;
+  background-color: rgba(2, 2, 2, 0.527);
   padding: 20px;
 }
 main .hl-container .container {
@@ -38,7 +35,7 @@ main .hl-container .container {
 }
 main .hl-container .container input {
   width: 400px;
-  margin-top: 3px;
+  margin-top: 8px;
   padding: 5px 10px;
   border-radius: 20px;
 }
@@ -53,10 +50,48 @@ main .hl-container .container2 div {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: orange;
+  background-color: white;
   text-align: center;
   line-height: 30px;
   margin: 2px;
   border-radius: 10px;
   font-weight: bold;
+}
+main .hl-container .control {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 30px;
+}
+main .hl-container .control input {
+  width: 400px;
+  margin-top: 3px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+main .hl-container .vysledek {
+  color: black;
+  background-color: white;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 20px;
+}
+main .hl-container .btn {
+  width: 130px;
+  border-radius: 30px;
+  padding: 5px 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
 }/*# sourceMappingURL=zjisti-heslo.css.map */

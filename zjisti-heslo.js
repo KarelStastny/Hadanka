@@ -1,5 +1,6 @@
-const mainAnswer = ["Ron", "Modrá", "Pes", "20", "1 12", "růžová", "značkovací", "32", "40 075"]
+const mainAnswer = ["Ron", "Modrá", "Pes", "20", "112", "růžová", "značkovací", "32", "40075"]
 const mainAnswerBad = ["Hermiona", "Zelená", "Kočka", "18", "1 30", "žlutá", "skriptovací", "28", "40 000"]
+
 
 // ====== Ask 1
 document.querySelector(".ask-1").addEventListener("input", function(event){
@@ -10,7 +11,7 @@ document.querySelector(".ask-1").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[0].toLocaleLowerCase().trim()){
         answer.textContent = "7"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[0].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -24,7 +25,7 @@ document.querySelector(".ask-2").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[1].toLocaleLowerCase().trim()){
         answer.textContent = "3"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[1].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -38,7 +39,7 @@ document.querySelector(".ask-3").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[2].toLocaleLowerCase().trim()){
         answer.textContent = "8"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[2].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -52,7 +53,7 @@ document.querySelector(".ask-4").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[3].toLocaleLowerCase().trim()){
         answer.textContent = "3"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[3].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -66,7 +67,7 @@ document.querySelector(".ask-5").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[4].toLocaleLowerCase().trim()){
         answer.textContent = "2"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[4].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -80,7 +81,7 @@ document.querySelector(".ask-6").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[5].toLocaleLowerCase().trim()){
         answer.textContent = "5"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[5].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -94,7 +95,7 @@ document.querySelector(".ask-7").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[6].toLocaleLowerCase().trim()){
         answer.textContent = "3"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[6].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -106,9 +107,9 @@ document.querySelector(".ask-8").addEventListener("input", function(event){
     let answer = document.querySelector(".answer-8")
 
     if(ask.toLowerCase().trim() === mainAnswer[7].toLocaleLowerCase().trim()){
-        answer.textContent = "6"
-    }else if (ask.toLowerCase().trim() === mainAnswerBad[7].toLocaleLowerCase().trim()){
         answer.textContent = "1"
+    }else if (ask.toLowerCase().trim() === mainAnswerBad[7].toLocaleLowerCase().trim()){
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
@@ -122,8 +123,30 @@ document.querySelector(".ask-9").addEventListener("input", function(event){
     if(ask.toLowerCase().trim() === mainAnswer[8].toLocaleLowerCase().trim()){
         answer.textContent = "8"
     }else if (ask.toLowerCase().trim() === mainAnswerBad[8].toLocaleLowerCase().trim()){
-        answer.textContent = "1"
+        answer.textContent = "0"
     }else{
         answer.textContent = "?"
     }
 })
+
+/*
+Ověření hesla  
+*/
+
+//// musí se předělat na mačkání buttonu aby se div promazával
+
+
+// let odstavec = document.createElement("p") 
+// document.querySelector(".control-pasword").addEventListener("check", function(event){
+//     let result = event.target.value
+
+     
+//     if(result === "738325368"){
+//         odstavec.textContent = "Správně"
+//         document.querySelector(".vysledek").appendChild(odstavec)
+//     } else if (result !== "738325368" && result.length > 8){
+//         odstavec.textContent = "Chybné heslo. Heslo neobsahuje žádnou 0."
+//         document.querySelector(".vysledek").appendChild(odstavec)
+//     }
+// })
+

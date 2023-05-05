@@ -36,8 +36,7 @@ main .hl-container .container {
   width: 200px;
   margin: 0 auto;
 }
-main .hl-container .container div {
-  background-color: orange;
+main .hl-container .container input {
   width: 200px;
   margin-top: 3px;
   padding: 5px 10px;

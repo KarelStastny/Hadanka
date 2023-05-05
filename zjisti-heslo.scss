@@ -46,9 +46,8 @@ main{
             width: 200px;
             margin: 0 auto;
             
-                div{
-                
-                    background-color: $color-primal;
+                input{
+    
                     width: 200px;
                     margin-top: 3px;
                     padding: 5px 10px;
@@ -80,3 +79,6 @@ main{
     }
 
 }
+
+
+//////Zrušit u inptů vzhledy na tabulator

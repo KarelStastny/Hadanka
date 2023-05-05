@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin header {
+    color: black;
+    background-color: rgb(232, 18, 240);
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    @include header();
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.container2{
+
+    div{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: aquamarine;
+        text-align: center;
+        line-height: 30px;
+    }
+
+}
+

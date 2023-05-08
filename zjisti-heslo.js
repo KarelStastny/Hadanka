@@ -133,20 +133,29 @@ document.querySelector(".ask-9").addEventListener("input", function(event){
 Ověření hesla  
 */
 
-//// musí se předělat na mačkání buttonu aby se div promazával
 
 
-// let odstavec = document.createElement("p") 
-// document.querySelector(".control-pasword").addEventListener("check", function(event){
-//     let result = event.target.value
+//zjištění hodnoty ověřovacího políčka
+let value = document.querySelector(".control-pasword").addEventListener("input", function(event){
+    // console.log(event.target.value)
+    value = event.target.value
+    
+    let odstavec = document.createElement("p")
+    document.querySelector(".btn").addEventListener("click", function(event){
+        
+        if (value !== "738325368"){
+            odstavec.textContent = "Chybné heslo. Heslo neobsahuje žádnou 0."
+            console.log(odstavec)
+            document.querySelector(".vysledek").appendChild(odstavec)
 
-     
-//     if(result === "738325368"){
-//         odstavec.textContent = "Správně"
-//         document.querySelector(".vysledek").appendChild(odstavec)
-//     } else if (result !== "738325368" && result.length > 8){
-//         odstavec.textContent = "Chybné heslo. Heslo neobsahuje žádnou 0."
-//         document.querySelector(".vysledek").appendChild(odstavec)
-//     }
-// })
+        }else{
+            console.log("obsahuje")
+            odstavec.textContent = "Správné heslo."
+            document.querySelector(".vysledek").appendChild(odstavec)
+        }
+
+
+        
+        })
+ })
 

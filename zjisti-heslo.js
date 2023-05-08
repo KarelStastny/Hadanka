@@ -129,12 +129,15 @@ document.querySelector(".ask-9").addEventListener("input", function(event){
     }
 })
 
+
+
+
+
+
 //=============Ověření hesla
 
 // odstavec s výsledkem
 let odstavec = document.createElement("p")
-
-
 
 //zjištění hodnoty ověřovacího políčka
 let value = document.querySelector(".control-pasword").addEventListener("change", function(event){
@@ -159,7 +162,5 @@ let value = document.querySelector(".control-pasword").addEventListener("change"
             // console.log(odstavec)
         }
         })
-
-    
  })
 

@@ -135,6 +135,7 @@ document.querySelector(".ask-9").addEventListener("input", function(event){
 let odstavec = document.createElement("p")
 
 
+
 //zjištění hodnoty ověřovacího políčka
 let value = document.querySelector(".control-pasword").addEventListener("change", function(event){
     value = event.target.value
@@ -142,15 +143,23 @@ let value = document.querySelector(".control-pasword").addEventListener("change"
     //Po stisknutí tlačítka
     document.querySelector(".btn").addEventListener("click", function(event){
 
+   
         if (value !== "738325318"){
+            odstavec.classList.remove("good-answer")
+            odstavec.classList.add("bad-answer")
             odstavec.textContent = "Chybné heslo. Heslo neobsahuje žádnou 0, zkontroluj si odpovědi"
-            console.log(odstavec)
+            // console.log(odstavec)
             document.querySelector(".vysledek").appendChild(odstavec)
 
         }else{
+            odstavec.classList.remove("bad-answer")
+            odstavec.classList.add("good-answer")
             odstavec.textContent = "Správné heslo."
             document.querySelector(".vysledek").appendChild(odstavec)
+            // console.log(odstavec)
         }
         })
+
+    
  })
 

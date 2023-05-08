@@ -71,7 +71,7 @@ main .hl-container .control input {
   border-radius: 20px;
 }
 main .hl-container .vysledek {
-  color: black;
+  color: rgb(240, 22, 22);
   background-color: white;
   width: 300px;
   border-radius: 20px;
@@ -79,6 +79,22 @@ main .hl-container .vysledek {
   margin: 0 auto;
   margin-top: 30px;
   line-height: 20px;
+}
+main .hl-container .vysledek .good-answer {
+  background-color: rgba(19, 185, 19, 0.719);
+  color: rgb(12, 12, 12);
+  border-radius: 20px;
+  line-height: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+main .hl-container .vysledek .bad-answer {
+  background-color: rgba(204, 31, 31, 0.712);
+  color: rgba(0, 0, 0, 0.774);
+  border-radius: 20px;
+  line-height: 20px;
+  padding: 5px;
+  font-weight: bold;
 }
 main .hl-container .btn {
   width: 130px;
